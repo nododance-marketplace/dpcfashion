@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAPÍTULO I — DESTERRADO</title>
-  <link rel="icon" href="assets/logo-bull.png">
+  <title>DPC — Shop</title>
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <a class="wordmark" href="index.html">DESTERRADO</a>
+    <a class="wordmark" href="index.html" aria-label="DPC"><img src="assets/logo-dpc.png" alt="DPC"></a>
     <nav>
       <a href="index.html" aria-current="page">Catalog</a><span class="dot">·</span>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Contact</a><span class="dot">·</span>
+      <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
     </nav>
-    <a class="mark" href="index.html" aria-label="Desterrado">
-      <img src="assets/logo-bull.png" alt="Desterrado">
-    </a>
   </header>
 
   <main>
-    <h1 class="collection-title">CAPÍTULO I</h1>
-
     <div class="toolbar">
       <div class="filters">
         <details class="filter" id="f-availability">
@@ -33,19 +29,10 @@
             <label><input type="radio" name="availability" value="soldout">Sold out</label>
           </div>
         </details>
-        <details class="filter" id="f-price">
-          <summary>Price</summary>
-          <div class="menu" data-filter="price">
-            <label class="checked"><input type="radio" name="price" value="all" checked>All</label>
-            <label><input type="radio" name="price" value="under200">Under $200</label>
-            <label><input type="radio" name="price" value="200to300">$200 – $300</label>
-            <label><input type="radio" name="price" value="over300">$300+</label>
-          </div>
-        </details>
       </div>
 
       <div class="right">
-        <span id="count">4 items</span>
+        <span id="count">6 items</span>
         <details class="filter" id="f-sort">
           <summary>Sort</summary>
           <div class="menu" data-filter="sort">
@@ -68,34 +55,81 @@
 
     <section class="grid" id="grid">
 
-      <a class="product sold-out" href="#" data-name="camisa bordada carmesí" data-price="185">
-        <span class="tile"><img src="assets/products/shirt-carmesi.jpg" alt="Camisa bordada carmesí"><span class="soldout-tag">SOLD OUT</span></span>
-        <span class="meta"><span class="name">Camisa Bordada Carmesí</span><span class="price">$185</span></span>
+      <a class="product" href="#" data-name="DPC Graffiti Tee — Electric" data-price="100">
+        <span class="tile"><img src="assets/products/shirt-dpc-grafiti-electrico.jpg" alt="DPC Graffiti Tee — Electric"></span>
+        <span class="meta"><span class="name">DPC Graffiti Tee — Electric</span><span class="price">$100</span></span>
       </a>
 
-      <a class="product sold-out" href="#" data-name="pantalón plisado arena" data-price="160">
-        <span class="tile"><img src="assets/products/trousers-arena.jpg" alt="Pantalón plisado arena"><span class="soldout-tag">SOLD OUT</span></span>
-        <span class="meta"><span class="name">Pantalón Plisado Arena</span><span class="price">$160</span></span>
+      <a class="product" href="#" data-name="DPC Graffiti Tee — White" data-price="100">
+        <span class="tile"><img src="assets/products/shirt-dpc-grafiti-blanco.jpg" alt="DPC Graffiti Tee — White"></span>
+        <span class="meta"><span class="name">DPC Graffiti Tee — White</span><span class="price">$100</span></span>
       </a>
 
-      <a class="product sold-out" href="#" data-name="pantalón plisado obsidiana" data-price="160">
-        <span class="tile"><img src="assets/products/trousers-obsidiana.jpg" alt="Pantalón plisado obsidiana"><span class="soldout-tag">SOLD OUT</span></span>
-        <span class="meta"><span class="name">Pantalón Plisado Obsidiana</span><span class="price">$160</span></span>
+      <a class="product" href="#" data-name="DPC Graffiti Tee — Orange" data-price="100">
+        <span class="tile"><img src="assets/products/shirt-dpc-naranja.jpg" alt="DPC Graffiti Tee — Orange"></span>
+        <span class="meta"><span class="name">DPC Graffiti Tee — Orange</span><span class="price">$100</span></span>
       </a>
 
-      <a class="product sold-out" href="#" data-name="camisa bordada esmeralda" data-price="185">
-        <span class="tile"><img src="assets/products/shirt-esmeralda.jpg" alt="Camisa bordada esmeralda"><span class="soldout-tag">SOLD OUT</span></span>
-        <span class="meta"><span class="name">Camisa Bordada Esmeralda</span><span class="price">$185</span></span>
+      <a class="product" href="#" data-name="DPC Graffiti Tee — Obsidian" data-price="100">
+        <span class="tile"><img src="assets/products/shirt-dpc-obsidiana.jpg" alt="DPC Graffiti Tee — Obsidian"></span>
+        <span class="meta"><span class="name">DPC Graffiti Tee — Obsidian</span><span class="price">$100</span></span>
+      </a>
+
+      <a class="product" href="#" data-name="Ringer Tee — Navy" data-price="100">
+        <span class="tile"><img src="assets/products/shirt-ringer-marina.jpg" alt="Ringer Tee — Navy"></span>
+        <span class="meta"><span class="name">Ringer Tee — Navy</span><span class="price">$100</span></span>
+      </a>
+
+      <a class="product" href="#" data-name="Ringer Tee — Crimson" data-price="100">
+        <span class="tile"><img src="assets/products/shirt-ringer-carmesi.jpg" alt="Ringer Tee — Crimson"></span>
+        <span class="meta"><span class="name">Ringer Tee — Crimson</span><span class="price">$100</span></span>
       </a>
 
     </section>
   </main>
 
   <footer>
-    <span>© 2026 DESTERRADO</span>
-    <span>LATIN LUXURY</span>
-    <span>CAPÍTULO I</span>
+    <span>© 2026 DPC</span>
+    <span>EST. 2026</span>
   </footer>
+
+  <div class="modal" id="product-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="pm-name">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-media">
+        <img id="pm-img" src="" alt="">
+      </div>
+      <div class="modal-info">
+        <p class="modal-eyebrow">DPC</p>
+        <h2 id="pm-name">Product</h2>
+        <p class="modal-price" id="pm-price">$100</p>
+        <fieldset class="sizes">
+          <legend>Size</legend>
+          <label><input type="radio" name="pm-size" value="S">S</label>
+          <label><input type="radio" name="pm-size" value="M">M</label>
+          <label><input type="radio" name="pm-size" value="L">L</label>
+          <label><input type="radio" name="pm-size" value="XL">XL</label>
+        </fieldset>
+        <p class="size-error" id="pm-size-error" hidden>Please choose a size.</p>
+        <button class="btn-add" id="pm-add">Add to cart</button>
+        <p class="modal-note">Free shipping · Ships in 2–4 days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="cart-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel modal-panel-cart" role="dialog" aria-modal="true" aria-labelledby="cm-title">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h2 id="cm-title">Cart</h2>
+      <p class="cart-empty" id="cart-empty">Your cart is empty.</p>
+      <div id="cart-items"></div>
+      <div class="cart-total"><span>Total</span><span id="cart-total">$0</span></div>
+      <button class="btn-add" id="checkout">Checkout</button>
+      <p class="modal-note" id="checkout-note" hidden>Checkout isn't live yet — email contact@dpc.com to order.</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
